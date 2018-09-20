@@ -1,0 +1,11 @@
+# ED
+repositorio para el módulo entorno de desarrollo del IES serpis
+
+virtualbox(pendiente de anotar)
+
+git:
+crear usuario y repositorio en github(pendiente de anotar)
+
+git config --global user.name gabmur
+git config --global user.email 1dam.gmartinez@institutoserpis.org
+git config --global push.default simple
