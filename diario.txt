@@ -1,20 +1,28 @@
 # ED
-2018 09 17
-repositorio para el módulo entorno de desarrollo del IES serpis
+2018 09 17.
+ repositorio para el módulo entorno de  desarrollo del IES serpis
 
-virtualbox(pendiente de anotar)
+ virtualbox(pendiente de anotar)
 
-git:
-crear usuario y repositorio en github(pendiente de anotar)
+ git:
+ crear usuario y repositorio en github (pendiente de anotar)
 
-git config --global user.name gabmur
-git config --global user.email 1dam.gmartinez@institutoserpis.org
-git config --global push.default simple
+ git config --global user.name gabmur
+ git config --global user.email  1dam.gmartinez@institutoserpis.org
+ git config --global push.default simple
 
-2018 09 24
-en maquina virtual con ubuntu 16.04 nstalamos el jdk de java8:
-sudo apt-add-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt install oracle-java8-installer
+2018 09 24.
+ en maquina virtual con ubuntu 16.04  nstalamos el jdk de java8:
+ sudo apt-add-repository ppa:webupd8team/ java
+ sudo apt-get update
+ sudo apt install oracle-java8-installer
 
-Creamos HolaMundo.java, compilamos y ejecutamos.
+ Creamos HolaMundo.java, compilamos y    ejecutamos.
+ 
+2018 09 27.
+ sudo apt update
+ sudo apt install git
+
+2018 10 01.
+descargamos eclipse IDE for java developors desde la pagina oficial de eclipseg
+para instalar, simplemente descomprimir.
