@@ -22,7 +22,7 @@ public class Jsuma {
 		System.out.println("segundo numero"+ numero2);
 		System.out.println("suma"+ suma);
 		System.out.println("resta"+ resta);
-		System.out.println("procusto"+ producto);
+		System.out.println("produsto"+ producto);
 		System.out.println("division"+ division);
 	}
 
