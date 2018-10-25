@@ -25,6 +25,16 @@ public class vector {
 		return-1;
 	}
 	
+	
+	
+	public static int min(int[] v) {
+		int i=0, min=v[1];// v[1] elegimos la posicion 1 de v
+		while(i < v.length);{//v.length= numero de caracteres en v
+			if(min > v[i] ) min =v[1];
+					min++;			
+	}
+	return min;
+	}
 }
 	
 
