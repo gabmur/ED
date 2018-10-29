@@ -9,6 +9,7 @@ public class vector {
 		
 		int index = indexOf(v,12);
 		System.out.println("index="+index);	
+		
 	}
 	
 	
@@ -28,12 +29,27 @@ public class vector {
 	
 	
 	public static int min(int[] v) {
-		int i=0, min=v[1];// v[1] elegimos la posicion 1 de v
-		while(i < v.length);{//v.length= numero de caracteres en v
-			if(min > v[i] ) min =v[1];
-					min++;			
+		//int i=0, min=v[1];// v[1] elegimos la posicion 1 de v
+		//while(i < v.length);//v.length= numero de caracteres en v
+			//if(min > v[i] ) min =v[1];
+				//	min++;	
+	//	int min = v[0];
+	//	for(int index = 1; index < v.length; index++)
+	//		if(v[index] < min)
+	//			min = v[index];
+	int indexOfMin =indexOfMin(v);
+		
+	return v[indexOfMin];
 	}
-	return min;
+	public static int indexOfMin(int[] v) {
+	int indexOfMin = 0;
+	for(int index = 1; index < v.length;index++) 	
+		if(v[index] < v[indexOfMin])
+			indexOfMin =index;
+		return indexOfMin;	
+	}
+	public static void sort(int[] v) {
+		//todo implementar mediante selectionsort
 	}
 }
 	

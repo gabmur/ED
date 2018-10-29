@@ -26,10 +26,28 @@ class VectorTest {
 	@Test
 	void min() {
 	
-	assertEquals(16, vector.min(new int[] {16,12,15,14,17}));
+	assertEquals(12, vector.min(new int[] {16,12,15,14,17}));
 	assertEquals(12, vector.min(new int[] {12,16,15,14,17}));
 	assertEquals(12, vector.min(new int[] {12}));
 	assertEquals(12, vector.min(new int[] {16,17,15,14,12}));
-	assertEquals(-12, vector.min(new int[] {-16,-17,-15,-14,-12}));
+	assertEquals(-17, vector.min(new int[] {-16,-17,-15,-14,-12}));
+	}
+	@Test
+	void indexOfMin() {
+	assertEquals(1, vector.indexOfMin(new int[] {16, 12, 15, 14, 17}));
+	assertEquals(0, vector.indexOfMin(new int[] {9, 12, 15, 14, 17}));
+	assertEquals(4, vector.indexOfMin(new int[] {16, 12, 15, 14, 7}));
+	assertEquals(0, vector.indexOfMin(new int[] {57}));
+	assertEquals(0, vector.indexOfMin(new int[] {57, 98}));
+	assertEquals(1, vector.indexOfMin(new int[] {98, 57}));
+	}
+	@Test 
+	void sort() {
+		int[] v=new int[] {15, 12};
+		vector.sort(v);
+		assertArrayEquals(new int [] {12, 15}, v);
+		v=new int[] {17, 12, 15};
+		vector.sort(v);
+		assertArrayEquals(new int [] {12, 15, 17}, v);
 	}
 }
