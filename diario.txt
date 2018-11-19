@@ -26,3 +26,5 @@
 2018 10 01.
 descargamos eclipse IDE for java developors desde la pagina oficial de eclipseg
 para instalar, simplemente descomprimir.
+2018 19 11
+csuma en monodevelop
