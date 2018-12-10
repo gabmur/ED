@@ -6,6 +6,12 @@ public partial class MainWindow : Gtk.Window
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
+
+        button2.Clicked += delegate {
+            string nombre = entryNombre.Text;
+            labelSaludo.Text = "Hola " + nombre;
+            Console.WriteLine("click en buttonAceptar con nombre =" + nombre);
+        };
     }
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
