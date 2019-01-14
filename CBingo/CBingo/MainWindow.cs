@@ -16,6 +16,8 @@ public partial class MainWindow : Gtk.Window
         buttonAdelante.Clicked += delegate {
             int numero = bombo.sacarBola();
             panel.Marcar(numero);
+            if (!bombo.quedanBolas())
+                buttonAdelante.Sensitive = false;
             Console.WriteLine("bottonAdelante pulsado");
         };
 
